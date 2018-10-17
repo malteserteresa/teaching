@@ -1,3 +1,4 @@
+package work;
 
 public class EvenNumbers {
 
@@ -8,5 +9,7 @@ public class EvenNumbers {
 		for (int i = 2; i <= 20; i++) {
 			System.out.println(i + " ");
 		}
+	  
+
 	}
 }
