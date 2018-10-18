@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry excluding="JavaPractice/src/|week2/src/|Week3/src/" kind="src" path=""/>
+	<classpathentry kind="src" path="JavaPractice/src"/>
+	<classpathentry kind="src" path="week2/src"/>
+	<classpathentry kind="src" path="Week3/src"/>
+	<classpathentry kind="output" path="JavaPractice/bin"/>
+</classpath>
