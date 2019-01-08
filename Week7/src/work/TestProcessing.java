@@ -3,10 +3,11 @@ package work;
 public class TestProcessing {
 
 	public static void main(String[] args) {
-		String str = "I love Programming";
-		char character = 'i';
-
-		System.out.println(character + " occurs " + timesCharOccurs(str, character) + " times ");
+		String input = "I love Programming";
+		char characterToMatchAgainst = 'i';
+		System.out.println(
+				characterToMatchAgainst + " occurs " + timesCharOccurs(input, characterToMatchAgainst) + " times ");
+		letterFrequencies(input);
 	}
 
 	public static int timesCharOccurs(String str, char character) {
@@ -27,6 +28,16 @@ public class TestProcessing {
 	private static String lowerCase(String str) {
 		str = str.toLowerCase();
 		return str;
+	}
+
+	public static int[] letterFrequencies(String input) {
+		char[] alphabet = { 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r',
+				's', 't', 'u', 'v', 'w', 'x', 'y', 'z' };
+		for (int i = 0; i < 26; i++) {
+			int count = timesCharOccurs(input, alphabet[i]);
+			System.out.print(count);
+		}
+		return new int[10];
 	}
 
 }

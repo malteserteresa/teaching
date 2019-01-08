@@ -16,6 +16,7 @@ public class temperatureConversion {
 		double celsius = scanner.nextDouble();
 		double tempOfCelsius = convertToFahrenheit(celsius);
 		System.out.println(tempOfCelsius);
+		scanner.close();
 	}
 
 	public static double convertToCelsius(double fahrenheit) {
@@ -26,6 +27,7 @@ public class temperatureConversion {
 	public static double convertToFahrenheit(double celsius) {
 		double convertedcelsius = ((celsius * 9 / 5) + 32);
 		return convertedcelsius;
+
 	}
 
 }
