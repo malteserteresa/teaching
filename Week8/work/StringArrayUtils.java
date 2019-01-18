@@ -3,16 +3,13 @@ package work;
 public class StringArrayUtils {
 
 	public static void main(String[] args) {
-		String[] input = { "abc" };
-		int expectedOutput = 3;
-		int actualOutput = StringArrayUtils.getTotalLength(input);
-		boolean testSuccess = actualOutput == expectedOutput;
-		if (testSuccess) {
-			System.out.println("Test 1 Success");
+		String[] stringArray = { "Hi", "my", "name", "Lauren" };
+		int expectedOutput = 6;
+
+		if (StringArrayUtils.getMaxLength(stringArray) == expectedOutput) {
+			System.out.println("True.");
 		} else {
-			System.out.println("Test 1 Failed");
-			System.out.println("Expected output was: " + expectedOutput);
-			System.out.println("Actual output was: " + actualOutput);
+			System.out.println("Flase. True value was " + StringArrayUtils.getMaxLength(stringArray));
 		}
 	}
 
@@ -38,7 +35,7 @@ public class StringArrayUtils {
 		int maxLengthString = 0;
 
 		// check every string to see if it is shorter than the initial value
-		for (int i = 1; i < stringArray.length; i++) {
+		for (int i = 0; i < stringArray.length; i++) {
 			String string = stringArray[i];
 			if (string.length() > maxLengthString) {
 				// update maxLengthString when a longer string is found
@@ -56,7 +53,7 @@ public class StringArrayUtils {
 	// returns the length of the shortest string
 	public static int getMinLength(String[] stringArray) {
 		// set minLengthString as an initial value
-		int minLengthString = 10;
+		int minLengthString = stringArray[0].length();
 
 		// check every string to see if it is shorter than the initial value
 		for (String string : stringArray) {
